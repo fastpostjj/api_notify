@@ -51,4 +51,5 @@ class LogMessage(models.Model):
     )
 
     def __str__(self) -> str:
-        return f'{self.message} Статус: {self.status} Дата и время отправки: {self.daytime_send}'
+        text = f'{self.message} Статус: {self.status} Дата и время отправки: {self.daytime_send}'
+        return text

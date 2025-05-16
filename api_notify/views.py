@@ -30,37 +30,30 @@ class MessageCreateAPIView(generics.CreateAPIView):
             daytime_for_send = localtime() + timedelta(hours=1)
         elif delay == 2:
             daytime_for_send = localtime() + timedelta(days=1)
-        if recepients:
-            try:
-                if isinstance(recepients, str):
+        try:
+            if isinstance(recepients, str):
+                message_object = Message(
+                    text=message_data,
+                    recepient=recepients,
+                    daytime_for_send=daytime_for_send,
+                )
+                message_object.save()
+
+            elif isinstance(recepients, list):
+                message_entries = []
+                for recepient in recepients:
                     message_object = Message(
                         text=message_data,
-                        recepient=recepients,
+                        recepient=recepient,
                         daytime_for_send=daytime_for_send,
                     )
-                    message_object.save()
-
-                elif isinstance(recepients, list):
-                    message_entries = []
-                    for recepient in recepients:
-                        message_object = Message(
-                            text=message_data,
-                            recepient=recepient,
-                            daytime_for_send=daytime_for_send,
-                        )
-                        message_entries.append(message_object)
-                    Message.objects.bulk_create(message_entries)
-            except Exception as e:
-                return Response(
-                    {"Status": e},
-                    status=status.HTTP_400_BAD_REQUEST
-                )
-        else:
+                    message_entries.append(message_object)
+                Message.objects.bulk_create(message_entries)
+        except Exception as e:
             return Response(
-                {"Status": "Неверный формат данных"},
+                {"Status": e},
                 status=status.HTTP_400_BAD_REQUEST
             )
-
         return Response(
             {"Status": "Successful"},
             status=status.HTTP_201_CREATED

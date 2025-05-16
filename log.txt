@@ -1,167 +1,124 @@
 Send message  проверка связи-11 Статус: S Дата и время отправки: 2025-05-16 01:56:21.243908+00:00
 Send message  проверка связи-11 Статус: S Дата и время отправки: 2025-05-16 02:01:28.847921+00:00
-Получено сообщений: 2
-Unsuccessfully status=unsuccessfully, server_answer=Something wrong, проверка связи-11
-Unsuccessfully status=unsuccessfully, server_answer=Something wrong, проверка связи-1
-Получено сообщений: 2
-answer: {'ok': True, 'result': {'message_id': 91, 'from': {'id': 8009529908, 'is_bot': True, 'first_name': 'task_tracker_bot', 'username': 'The_Task_Tracker_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'last_name': 'Блохина', 'username': 'fastpostj', 'type': 'private'}, 'date': 1747400722, 'text': 'проверка связи-11'}}, status: True
-Unsuccessfully status=unsuccessfully, server_answer=Something wrong, проверка связи-11
-Получено сообщений: 2
-answer: {'ok': True, 'result': {'message_id': 95, 'from': {'id': 8009529908, 'is_bot': True, 'first_name': 'task_tracker_bot', 'username': 'The_Task_Tracker_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'last_name': 'Блохина', 'username': 'fastpostj', 'type': 'private'}, 'date': 1747400842, 'text': 'проверка связи-11'}}, status: True, <class 'bool'>
-Send message status=successfully, server_answer=Ok, проверка связи-11
-answer: {'ok': True, 'result': {'message_id': 96, 'from': {'id': 8009529908, 'is_bot': True, 'first_name': 'task_tracker_bot', 'username': 'The_Task_Tracker_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'last_name': 'Блохина', 'username': 'fastpostj', 'type': 'private'}, 'date': 1747400842, 'text': 'проверка связи-1'}}, status: True, <class 'bool'>
-Send message status=successfully, server_answer=Ok, проверка связи-1
-Получено сообщений: 0
-Получено сообщений: 1
-Send message status=successfully, server_answer=, проверка связи на почту
-Получено сообщений: 0
-Получено сообщений: 0
-Получено сообщений: 0
-Получено сообщений: 0
-Получено сообщений: 2
-Error local variable 'status' referenced before assignment  проверка связи-ТГ
-Error local variable 'status' referenced before assignment  проверка связи-ТГ
-Получено сообщений: 4
-Error local variable 'status' referenced before assignment  проверка связи-ТГ
-Error local variable 'status' referenced before assignment  проверка связи-ТГ
-Error local variable 'status' referenced before assignment  Новая свежая проверка связи-ТГ
-Error local variable 'status' referenced before assignment  Новая свежая проверка связи-ТГ
-Получено сообщений: 4
-Error local variable 'status' referenced before assignment  проверка связи-ТГ
-Error local variable 'status' referenced before assignment  проверка связи-ТГ
-Error local variable 'status' referenced before assignment  Новая свежая проверка связи-ТГ
-Error local variable 'status' referenced before assignment  Новая свежая проверка связи-ТГ
-Получено сообщений: 4
-Error local variable 'status' referenced before assignment  проверка связи-ТГ
-Error local variable 'status' referenced before assignment  проверка связи-ТГ
-Error local variable 'status' referenced before assignment  Новая свежая проверка связи-ТГ
-Error local variable 'status' referenced before assignment  Новая свежая проверка связи-ТГ
-Получено сообщений: 4
-Error local variable 'status' referenced before assignment  проверка связи-ТГ
-Error local variable 'status' referenced before assignment  проверка связи-ТГ
-Error local variable 'status' referenced before assignment  Новая свежая проверка связи-ТГ
-Error local variable 'status' referenced before assignment  Новая свежая проверка связи-ТГ
-Получено сообщений: 4
-Error local variable 'status' referenced before assignment  проверка связи-ТГ
-Error local variable 'status' referenced before assignment  проверка связи-ТГ
-Error local variable 'status' referenced before assignment  Новая свежая проверка связи-ТГ
-Error local variable 'status' referenced before assignment  Новая свежая проверка связи-ТГ
-Получено сообщений: 2
-answer: {'ok': True, 'result': {'message_id': 97, 'from': {'id': 8009529908, 'is_bot': True, 'first_name': 'task_tracker_bot', 'username': 'The_Task_Tracker_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'last_name': 'Блохина', 'username': 'fastpostj', 'type': 'private'}, 'date': 1747401622, 'text': 'Новая свежая проверка связи-ТГ'}}, status: True, <class 'bool'>
-Send message status=successfully, server_answer=Ok,  Новая свежая проверка связи-ТГ
-Send message status=successfully, server_answer=,  Новая свежая проверка связи-ТГ
-Получено сообщений: 4
-answer: {'ok': True, 'result': {'message_id': 98, 'from': {'id': 8009529908, 'is_bot': True, 'first_name': 'task_tracker_bot', 'username': 'The_Task_Tracker_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'last_name': 'Блохина', 'username': 'fastpostj', 'type': 'private'}, 'date': 1747401682, 'text': 'Новая свежая проверка связи-ТГ'}}, status: True, <class 'bool'>
-Send message status=successfully, server_answer=Ok,  Новая свежая проверка связи-ТГ
-Send message status=successfully, server_answer=,  Новая свежая проверка связи-ТГ
-answer: {'ok': True, 'result': {'message_id': 99, 'from': {'id': 8009529908, 'is_bot': True, 'first_name': 'task_tracker_bot', 'username': 'The_Task_Tracker_bot'}, 'chat': {'id': 729962006, 'first_name': 'Юлия', 'last_name': 'Блохина', 'username': 'fastpostj', 'type': 'private'}, 'date': 1747401683, 'text': 'Новая свежая проверка связи-ТГ'}}, status: True, <class 'bool'>
-Send message status=successfully, server_answer=Ok,  Новая свежая проверка связи-ТГ
-Unsuccessfully status=unsuccessfully, server_answer=(554, b'5.7.1 Message rejected under suspicion of SPAM; https://ya.cc/1IrBc 1747401685-OLJceQDLaKo0-OHzTMOAL'),  Новая свежая проверка связи-ТГ
-Получено сообщений: 1
-Send message status=successfully, server_answer=,  Новая свежая проверка связи-ТГ
-Получено сообщений: 0
-Получено сообщений: 0
+Сообщений для отправки: 3
+Сообщений для отправки: 3
+Сообщений для отправки: 3
+Сообщений для отправки: 5
+Send message status=successfully, server_answer=, Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Send message status=successfully, server_answer=, Свежая проверка связи-ТГ
+Сообщений для отправки: 4
+Сообщений для отправки: 4
 Сообщений для отправки: 6
-Send message status=successfully, server_answer=Ok, проверка связи-11
-Send message status=successfully, server_answer=, проверка связи на почту
-Send message status=successfully, server_answer=Ok, проверка связи-1
-Send message status=successfully, server_answer=Ok, проверка связи-ТГ
-Error INSERT или UPDATE в таблице "api_notify_logmessage" нарушает ограничение внешнего ключа "api_notify_logmessag_message_id_9a2ecbf7_fk_api_notif"
-DETAIL:  Ключ (message_id)=(31) отсутствует в таблице "api_notify_message".  Новая свежая проверка связи-ТГ
-Сообщений для отправки: 2
-Send message status=successfully, server_answer=Ok,  Новая свежая проверка связи-ТГ
-Send message status=successfully, server_answer=,  Новая свежая проверка связи-ТГ
-Сообщений для отправки: 2
-Send message status=successfully, server_answer=Ok,  Новая свежая проверка связи-ТГ
-Send message status=successfully, server_answer=,  Новая свежая проверка связи-ТГ
-Сообщений для отправки: 0
-Сообщений для отправки: 2
-Send message status=successfully, server_answer=Ok,  Новая свежая проверка связи-ТГ
-Send message status=successfully, server_answer=,  Новая свежая проверка связи-ТГ
-Сообщений для отправки: 0
-Сообщений для отправки: 2
-Сообщений для отправки: 2
-Сообщений для отправки: 2
-Сообщений для отправки: 2
-Сообщений для отправки: 2
-Сообщений для отправки: 2
-Сообщений для отправки: 2
-Сообщений для отправки: 2
-Сообщений для отправки: 2
-Send message status=successfully, server_answer=, Новая свежая проверка связи-ТГ
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Сообщений для отправки: 1
-Send message status=successfully, server_answer=Ok, Новая свежая проверка связи-ТГ
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 0
-Сообщений для отправки: 1
+Send message status=successfully, server_answer=, Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 7
+Unsuccessfully Свежая проверка связи-ТГ
+Send message status=successfully, server_answer=, Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 8
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Error local variable 'status' referenced before assignment Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 8
+Send message status=successfully, server_answer=Ok, Свежая проверка связи-ТГ
+Send message status=successfully, server_answer=, Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Error local variable 'status' referenced before assignment Свежая проверка связи-ТГ
+Unsuccessfully Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Error local variable 'status' referenced before assignment Свежая проверка связи-ТГ
+Send message status=successfully, server_answer=Ok, Свежая проверка связи-ТГ
+Send message status=successfully, server_answer=Ok, Свежая проверка связи-ТГ
 Сообщений для отправки: 3
+Error local variable 'status' referenced before assignment Свежая проверка связи-ТГ
 Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
-Сообщений для отправки: 3
+Error local variable 'status' referenced before assignment Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Error local variable 'status' referenced before assignment Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Error local variable 'status' referenced before assignment Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Error local variable 'status' referenced before assignment Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Error local variable 'status' referenced before assignment Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Error local variable 'status' referenced before assignment Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Error local variable 'status' referenced before assignment Свежая проверка связи-ТГ
+Сообщений для отправки: 5
+Error local variable 'status' referenced before assignment Свежая проверка связи-ТГ
+Сообщений для отправки: 6
+Error local variable 'status' referenced before assignment Свежая проверка связи-ТГ

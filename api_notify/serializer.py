@@ -2,19 +2,20 @@ from rest_framework import serializers
 
 
 class MessageRequestSerializer(serializers.Serializer):
-    message = serializers.CharField(max_length=1024)
+    message = serializers.CharField(
+        max_length=1024,
+        required=True,
+    )
     recepient = serializers.ListField(
         child=serializers.CharField(max_length=150),
         allow_empty=False,
+        required=True,
     )
-    # recepient = serializers.CharField(
-    #     max_length=150,
-    #     # validators=[IsStrOrList(), ],
-    #     required=False
-    # )
-    delay = serializers.IntegerField(default=0)
+    delay = serializers.IntegerField(
+        required=True,
+    )
 
-    def validate_recipient(self, value):
+    def validate_recepient(self, value):
         if isinstance(value, list):
             if not all(
                 isinstance(item, str)
