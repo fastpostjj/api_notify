@@ -9,7 +9,16 @@ class Message(models.Model):
     text = models.CharField(
         max_length=1024,
         verbose_name="Текст сообщения",
-        )
+    )
+    recepient = models.CharField(
+        max_length=150,
+        verbose_name="Получатель",
+        **NULLABLE
+    )
+    daytime_for_send = models.DateTimeField(
+        verbose_name="Дата и время отправки",
+        **NULLABLE
+    )
 
     def __str__(self) -> str:
         return self.text
@@ -25,17 +34,12 @@ class LogMessage(models.Model):
     ]
     message = models.ForeignKey(
         Message,
-        on_delete=models.SET_NULL,
+        on_delete=models.CASCADE,
         **NULLABLE,
         verbose_name="Текст сообщения",
-        )
-    daytime_send = models.DateTimeField(
-        verbose_name="Дата и время отправки",
-        **NULLABLE
     )
-    recepient = models.CharField(
-        max_length=150,
-        verbose_name="Получатель",
+    daytime_send = models.DateTimeField(
+        verbose_name="Дата и время попытки отправки",
         **NULLABLE
     )
     status = models.CharField(

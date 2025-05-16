@@ -155,8 +155,6 @@ REDIS_PORT = os.getenv('REDIS_PORT')
 # URL-адрес брокера сообщений, Redis
 CELERY_BROKER_URL = f'redis://{REDIS_HOST}:{REDIS_PORT}'
 
-print("CELERY_BROKER_URL=", CELERY_BROKER_URL)
-
 # URL-адрес брокера результатов, также Redis
 CELERY_RESULT_BACKEND = f'redis://{REDIS_HOST}:{REDIS_PORT}'
 
