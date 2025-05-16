@@ -10,8 +10,7 @@ def is_valid_email(email) -> bool:
     return re.match(pattern, email) is not None
 
 
-def send_email(subject, message_body, email) -> tuple[str, str]:
-    server_answer = ""
+def send_email(subject, message_body, email) -> str:
     status = 'successfully'
     try:
         send_mail(
@@ -21,33 +20,34 @@ def send_email(subject, message_body, email) -> tuple[str, str]:
             [email],
             fail_silently=False
         )
-    except SMTPException as error:
-        server_answer = error
+    except SMTPException:
         status = 'unsuccessfully'
-    return status, server_answer
+    return status
 
 
-def send_telegram_message(text, recepient) -> tuple[str, str]:
+def send_telegram_message(text, recepient) -> str:
     chat_id = recepient
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/"
     url += f"sendMessage?chat_id={chat_id}&text={text}"
     answer = requests.get(url).json()
     status = answer.get('ok')
     if status:
-        return 'successfully', 'Ok'
+        return 'successfully'
     else:
-        return 'unsuccessfully', 'Something wrong'
+        return 'unsuccessfully'
 
 
-def send_message(text, recepient) -> tuple[str, str]:
+def send_message(text, recepient) -> str:
     """
     Отправка сообщения на email или в телеграм
     """
     # Определяем, куда будем отправлять в зависимости от получателя
     if recepient.isdigit():
-        # Если все числа,то в телеграм
-        status, server_answer = send_telegram_message(text, recepient)
+        # Если в адресе все числа,то в телеграм
+        status = send_telegram_message(text, recepient)
     elif is_valid_email(recepient):
-        # Если email, то на почту
-        status, server_answer = send_email(text, text, recepient)
-    return status, server_answer
+        # Если это email, то на почту
+        status = send_email(text, text, recepient)
+    else:
+        status = "Адрес указан неверно"
+    return status

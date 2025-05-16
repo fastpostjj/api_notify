@@ -9,7 +9,7 @@ from api_notify.services.mailing import send_message
 
 
 @shared_task
-def send_messages(*args):
+def send_messages(*args) -> None:
     file_name = str(BASE_DIR) + os.sep + "log.txt"
     current_datetime = localtime()
     # Подзапрос для проверки существует ли LogMessage
@@ -19,7 +19,7 @@ def send_messages(*args):
         status='S'
     )
 
-    # Выбираем все сообщения, для которых нет отправленного лога
+    # Выбираем все сообщения, для которых нет лога со стратусом 'Отправлено'
     message_objects = Message.objects.annotate(
         has_sent_log=Exists(sent_log_exists)
     ).filter(
@@ -43,7 +43,7 @@ def send_messages(*args):
             )
             log_message_object.save()
             try:
-                status, server_answer = send_message(
+                status = send_message(
                     message_object.text,
                     message_object.recepient
                 )
@@ -52,7 +52,6 @@ def send_messages(*args):
                     log_message_object.save()
                     with open(file_name, "a", encoding="UTF-8") as file:
                         text = f"Send message status={status}, "
-                        text += f"server_answer={server_answer}, "
                         text += f"{message_object}\n"
                         file.write(text)
                 else:
@@ -62,4 +61,4 @@ def send_messages(*args):
 
             except Exception as e:
                 with open(file_name, "a", encoding="UTF-8") as file:
-                    file.write(f"Error {e} {message_object}\n")
+                    file.write(f"Error! {e} {message_object}\n")

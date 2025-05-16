@@ -7,7 +7,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-zt8cho@@&-8fk^hpabg^(3v5zum2a_9=65+3fp$of+@+&d%z=b'
 
-# Чтение файла с переменными окружения
 dot_env = os.path.join(BASE_DIR, '.env')
 load_dotenv(dotenv_path=dot_env)
 
@@ -143,12 +142,6 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 # Настройки для Celery
 
-# URL-адрес брокера сообщений, Redis
-# CELERY_BROKER_URL = 'redis://localhost:6379'
-
-# URL-адрес брокера результатов, также Redis
-# CELERY_RESULT_BACKEND = 'redis://localhost:6379'
-
 REDIS_HOST = os.getenv('REDIS_HOST')
 REDIS_PORT = os.getenv('REDIS_PORT')
 
@@ -167,11 +160,11 @@ CELERY_TASK_TRACK_STARTED = True
 # Максимальное время на выполнение задачи
 CELERY_TASK_TIME_LIMIT = 30 * 60
 
-# Настройки для Celery
+# Настройки расписания для Celery
 CELERY_BEAT_SCHEDULE = {
     'task-name': {
-        'task': 'api_notify.tasks.send_messages',  # Путь к задаче
-        'schedule': timedelta(minutes=1),  # Расписание выполнения задачи
+        'task': 'api_notify.tasks.send_messages',
+        'schedule': timedelta(minutes=1),
     },
 }
 

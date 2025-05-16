@@ -4,7 +4,10 @@ from config.settings import NULLABLE
 
 class Message(models.Model):
     """
-    Сообщение, отправляемое пользователям
+    Класс сообщений, отправляемых пользователям.
+    - text - текст сообщения
+    - recepient - адрес получателя
+    - daytime_for_send - запланированные время и дата отправки
     """
     text = models.CharField(
         max_length=1024,
@@ -21,12 +24,17 @@ class Message(models.Model):
     )
 
     def __str__(self) -> str:
-        return self.text
+        text = f'{self.text} Получатель: {self.recepient} '
+        text += f'Дата и время отправки: {self.daytime_for_send}'
+        return text
 
 
 class LogMessage(models.Model):
     """
-    Логи об отправке сообщений
+    Класс логов об отправке сообщений.
+    - message- объект класса Message
+    - daytime_send - дата и время попытки отправки сообщения
+    - status - статус отправки ('Не отправлено'/'Отправлено')
     """
     STATUS_SENDING = [
         ('N', 'Не отправлено'),
@@ -51,5 +59,6 @@ class LogMessage(models.Model):
     )
 
     def __str__(self) -> str:
-        text = f'{self.message} Статус: {self.status} Дата и время отправки: {self.daytime_send}'
+        text = f'{self.message} Статус: {self.status} '
+        text += f'Дата и время отправки: {self.daytime_send}'
         return text
