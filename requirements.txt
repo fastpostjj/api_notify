@@ -1,0 +1,13 @@
+Django
+djangorestframework
+requests
+redis
+celery
+django_celery_beat
+python-dotenv
+
+# psycopg2-binary
+
+#Windows
+eventlet
+psycopg
